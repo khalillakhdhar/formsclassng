@@ -1,1 +1,43 @@
-<p>addrdv works!</p>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+       
+      </div>
+      <div class="col">
+        <form (submit)="addRdv()">
+            <h2>Ajout d'un rendez-vous</h2>
+            <div class="mb-3">
+              <label for="titre" class="form-label">titre</label>
+              <input type="text" [(ngModel)]="rendezvous.titre" name="titre" placeholder="votre titre ici" class="form-control" >
+           
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">date</label>
+              <input type="datetime-local" [(ngModel)]="rendezvous.date"  name="date" class="form-control" >
+           
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">description</label>
+              <textarea  [(ngModel)]="rendezvous.description" name="description" class="form-control"></textarea>
+           
+            </div>
+            <div class="mb-3">
+              <label for="lieu" class="form-label">lieu</label>
+              <input type="text" [(ngModel)]="rendezvous.lieu"  name="lieu" class="form-control" >
+           
+            </div>
+            <div class="mb-3">
+              <label for="lieu" class="form-label">montant</label>
+              <input type="number" [(ngModel)]="rendezvous.montant" name="montant" class="form-control" >
+           
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>
+  <app-readrdv></app-readrdv>

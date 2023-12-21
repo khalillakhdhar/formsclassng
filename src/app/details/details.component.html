@@ -1,1 +1,39 @@
-<p>details works!</p>
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        <h2>Détailles du rendez-vous</h2>
+        <br>
+        <!-- détaille du rdv-->
+        <table class="table table-bordered">
+            <tr>
+                <td>titre</td>
+                <td>{{rdv.titre}}</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>{{rdv.date}}</td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td>{{rdv.description}}</td>
+            </tr>
+            <tr>
+                <td>lieu</td>
+                <td>{{rdv.lieu}}</td>
+            </tr>
+            <tr>
+                <td>montant</td>
+                <td><span *ngIf="rdv.montant>0">{{rdv.montant}}</span>
+                <span *ngIf="rdv.montant==0"  class="alert alert-success">gratuit</span>
+                </td>
+            </tr>
+        </table>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>

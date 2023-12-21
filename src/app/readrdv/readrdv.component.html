@@ -1,1 +1,35 @@
-<p>readrdv works!</p>
+<div [ngSwitch]="rdvs.length">
+    <div *ngSwitchCase="0">
+        <h2>Aucun rendez-vous</h2>
+    </div>
+    <div *ngSwitchDefault>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>titre</th>
+                    <th>date</th>
+                    <th>description</th>
+                    <th>lieu</th>
+                    <th>montant</th>
+                    <th>Détails</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rdv of rdvs; let id=index">
+                    <td>{{rdv.titre}}</td>
+                    <td>{{rdv.date}}</td>
+                    <td>{{rdv.description}}</td>
+                    <td>{{rdv.lieu}}</td>
+                    <td>{{rdv.montant}}</td>
+                    <td>
+                       <a [routerLink]="['/details',id]">Détails</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+  
+    </div>
+
+
