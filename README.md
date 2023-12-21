@@ -1,27 +1,21 @@
 # Formsclassng
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+application de gestion des rendez-vous hors ligne 
+consiste à créer deux composant un qui permet de voir une liste des rendez-vous de supprimer un rendez vous de voir ses détailles
+et le créer dans un autre composant
+# integration de bootstrap
+# la pagination
+# la recherche temps réel dans la liste
+# un rendez vous:
+-titre, date , description,lieu, montant / gratuit
+# création du projet 
+ng new (titre) --no-standalone
+# création des composant et leurs routages
+ng g c (titre):
+-addRdv(page), readRdv(page), header(partie), footer(partie), details(page)
+# création de la class rendezvous
+ng g class (titre) : rdv
+# le service du rendezvous 
+ng g service (titre) rdvservice
+# implementation du code
+ajout modifier supprimer
